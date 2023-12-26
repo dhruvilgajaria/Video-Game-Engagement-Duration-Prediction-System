@@ -1,0 +1,6 @@
+Part 1 - Play Prediction Model:
+In this part, I implemented a Bayesian Personalized Ranking (BPR) model using TensorFlow to predict whether a user would play a given game. My approach involved training the model on a mix of positive and negative user-game interactions. I created efficient lookups and matrix operations by indexing users and games. To evaluate the model's accuracy, I used a balanced validation set. For predictions on unseen data, I utilized the trained BPR model to generate output for the test dataset.
+
+Part 2 - Time Played Prediction Model:
+For the second task, my goal was to predict the time a user would spend playing a game, specifically predicting the log-transformed hours played. I applied a collaborative filtering method, focusing on computing user and game biases (betaU and betaI) along with a global average (alpha). The model was trained on a selected portion of the data and assessed on a separate validation set, using Mean Squared Error (MSE) as the metric. Finally, I generated predictions for the test pairs based on these calculated biases and average playtime.
+
